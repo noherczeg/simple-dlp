@@ -1,0 +1,26 @@
+{
+  "name": "simple-dlp",
+  "version": "0.1.0",
+  "description": "A simple dead link protection application",
+  "type": "module",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "format": "prettier --config .prettierrc \"src/**/*.{mjs,js,ts}\" --write"
+  },
+  "keywords": ["web", "dead links", "dead link", "detector", "protection"],
+  "author": "Norbert Herczeg <noherczeg@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fast-csv/format": "^4.3.5",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "got": "^12.6.0",
+    "htmlparser2": "^8.0.1",
+    "node-schedule": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.0",
+    "prettier": "^2.8.4"
+  }
+}
