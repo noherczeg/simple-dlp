@@ -95,6 +95,7 @@ function getLinks($, referer) {
   const urls = Array.from($a)
     .filter((a) => a.attributes.find(attributeFilter))
     .map((a) => a.attributes.find(attributeFilter).value.trim())
+    .filter(v => !v.startsWith('mailto:'))
     .map((u) =>
       u.match(/^http(s)?:\/\//)
         ? u
